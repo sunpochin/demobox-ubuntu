@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pac/codes/kkbox-ubuntu/main.cpp
+math.h
+-
+
+/home/pac/codes/kkbox-ubuntu/tests.cpp
+main.cpp
+/home/pac/codes/kkbox-ubuntu/main.cpp
+gtest/gtest.h
+-
+
