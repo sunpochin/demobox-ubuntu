@@ -1,3 +1,0 @@
-/home/pac/codes/kkbox-ubuntu/CMakeFiles/rebuild_cache.dir
-/home/pac/codes/kkbox-ubuntu/CMakeFiles/edit_cache.dir
-/home/pac/codes/kkbox-ubuntu/CMakeFiles/runTests.dir
