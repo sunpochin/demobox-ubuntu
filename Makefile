@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pac/codes/kkbox-ubuntu
+CMAKE_SOURCE_DIR = /home/oem/codes/demobox-ubuntu
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pac/codes/kkbox-ubuntu
+CMAKE_BINARY_DIR = /home/oem/codes/demobox-ubuntu
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pac/codes/kkbox-ubuntu/CMakeFiles /home/pac/codes/kkbox-ubuntu/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/codes/demobox-ubuntu/CMakeFiles /home/oem/codes/demobox-ubuntu/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pac/codes/kkbox-ubuntu/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/codes/demobox-ubuntu/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named runTests
+# Target rules for targets named kkbox.exe
 
 # Build rule for target.
-runTests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 runTests
-.PHONY : runTests
+kkbox.exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 kkbox.exe
+.PHONY : kkbox.exe
 
 # fast build rule for target.
-runTests/fast:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
-.PHONY : runTests/fast
+kkbox.exe/fast:
+	$(MAKE) -f CMakeFiles/kkbox.exe.dir/build.make CMakeFiles/kkbox.exe.dir/build
+.PHONY : kkbox.exe/fast
 
 tests.o: tests.cpp.o
 
@@ -129,7 +129,7 @@ tests.o: tests.cpp.o
 
 # target to build an object file
 tests.cpp.o:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests.cpp.o
+	$(MAKE) -f CMakeFiles/kkbox.exe.dir/build.make CMakeFiles/kkbox.exe.dir/tests.cpp.o
 .PHONY : tests.cpp.o
 
 tests.i: tests.cpp.i
@@ -138,7 +138,7 @@ tests.i: tests.cpp.i
 
 # target to preprocess a source file
 tests.cpp.i:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests.cpp.i
+	$(MAKE) -f CMakeFiles/kkbox.exe.dir/build.make CMakeFiles/kkbox.exe.dir/tests.cpp.i
 .PHONY : tests.cpp.i
 
 tests.s: tests.cpp.s
@@ -147,7 +147,7 @@ tests.s: tests.cpp.s
 
 # target to generate assembly for a file
 tests.cpp.s:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests.cpp.s
+	$(MAKE) -f CMakeFiles/kkbox.exe.dir/build.make CMakeFiles/kkbox.exe.dir/tests.cpp.s
 .PHONY : tests.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... runTests"
+	@echo "... kkbox.exe"
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"

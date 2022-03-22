@@ -1,4 +1,4 @@
-# Install script for directory: /home/pac/codes/kkbox-ubuntu
+# Install script for directory: /home/oem/codes/demobox-ubuntu
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pac/codes/kkbox-ubuntu/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/oem/codes/demobox-ubuntu/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
